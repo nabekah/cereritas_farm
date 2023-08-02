@@ -66,6 +66,8 @@ const products = [
                   <img
                     src={product.imageSrc}
                     alt={product.imageAlt}
+                    height={912}
+                    width={660}
                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                   />
                 </div>

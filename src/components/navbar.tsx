@@ -39,8 +39,10 @@ export default function Example() {
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src="/public/logo.png"
                     alt="Your Company"
+                    height={8}
+                    width={10}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -79,7 +81,9 @@ export default function Example() {
                       <span className="sr-only">Open user menu</span>
                       <Image
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="/lp1.avif"
+                        width={256}
+                        height={256}
                         alt=""
                       />
                     </Menu.Button>
