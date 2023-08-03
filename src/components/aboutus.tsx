@@ -49,7 +49,7 @@ const links = [
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">About us</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
             At Celeritas Farms, we are a leading agricultural enterprise dedicated to sustainable farming practices and the production of high-quality farm products. With a strong commitment to excellence, innovation, and community empowerment, we aim to make a positive impact on food security, environmental conservation, and rural development.
             </p>
