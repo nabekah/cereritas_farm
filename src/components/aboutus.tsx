@@ -12,8 +12,10 @@ const links = [
     { name: 'Fish', value: '40' },
     { name: 'Tomatoes', value: 'Unlimited' },
   ]
+
   
-  export default function Example() {
+  
+  export default function Aboutus() {
     return (
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <Image

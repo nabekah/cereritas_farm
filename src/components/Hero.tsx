@@ -13,19 +13,19 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 
-export default function Example() {
+export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="flex bg-white p-0 ">
-      <div className=' absolute '>
-      <Image className=''
+    <div className="relative isolate overflow-hidden bg-white p-0 ">
+      
+      <Image className=' absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
        src={coverimge}
        alt="cover image"
        
        
       /> 
-      </div>
+      
       <div className="relative px-6 lg:pt-1 lg:px-8 items-center ">
       
 
@@ -37,21 +37,21 @@ export default function Example() {
             
             
           </div>
-          <div className="text-center items-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <div className=" sticky top-20 w-[100%] p-1 justify-center text-center items-center border-1 backdrop-blur-md rounded-md">
+            <h1 className="m-6 text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
             Welcome to Celeritas Farms
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="m-6 mt-10 p-3 text-lg leading-8 text-gray-200 items-center">
             where nature thrives, and abundance flourishes. Our sustainable agriculture nurtures communities, respects the environment, and grows a brighter future. 
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="m-8 mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Join us today!
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-200">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

@@ -1,25 +1,25 @@
-'use client'
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
-import Link from 'next/link'
+"use client"
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Service', href: '#', current: false },
-  { name: 'Products', href: '#', current: false },
-  { name: 'About us', href: '#', current: false },
-  { name: 'Contact us', href: '#', current: false },
+  { id:1, name: 'Home', href: '#', current: true },
+  { id:2,  name: 'Service', href: '#', current: false },
+  { id:3, name: 'Products', href: '#', current: false },
+  { id:4,  name: 'About us', href: '#', current: false },
+  { id:5, name: 'Contact us', href: '#', current: false },
 ]
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
-}
+};
 
-export default function Example() {
+export default function Navbar() {
   return (
-    
+
     <Disclosure as="header" className="bg-gray-800">
       {({ open }) => (
         <>
@@ -51,7 +51,7 @@ export default function Example() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
-                        key={item.name}
+                        key={item.id}
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -141,7 +141,7 @@ export default function Example() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
+                  key={item.id}
                   as="a"
                   href={item.href}
                   className={classNames(
@@ -158,6 +158,6 @@ export default function Example() {
         </>
       )}
     </Disclosure>
-   
+
   )
 }

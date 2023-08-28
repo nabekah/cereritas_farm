@@ -1,31 +1,18 @@
-'use client'
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-import { useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Switch } from '@headlessui/react'
+'use client';
+
+import { useState } from 'react';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { Switch } from '@headlessui/react';
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Contactus() {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="relative bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -41,7 +28,15 @@ export default function Example() {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+       <ul className=' text-2xl'>
+        <li>Digital Address: VS-1640-8271</li>
+        <li>House/Building/Flat No.: UNNUMBERED PLOT, NEAR MTN MAST, TAFI AGOME-MADO</li>
+        <li>City: TAFI AGOME-MADO</li>
+        <li>P.O Box NO/PMB/DTD: PO BOX MP 3854, MAMPROBI G/AR</li>
+        <li>Country: Ghana</li>
+       </ul>
+        
+       
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -116,6 +111,7 @@ export default function Example() {
                   name="country"
                   className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                 >
+                  <option>GH</option>
                   <option>US</option>
                   <option>CA</option>
                   <option>EU</option>

@@ -8,7 +8,7 @@ import Aboutus from '@/components/aboutus'
 export default function Home() {
   return (
     
-    <main>
+    <>
       <Hero />
       <Landing />
       <Products />
@@ -16,6 +16,6 @@ export default function Home() {
       <Contactus />
 
 
-    </main>
+    </>
   )
 }
