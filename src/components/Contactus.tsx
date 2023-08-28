@@ -1,8 +1,10 @@
 'use client';
 
+
 import { useState } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { AtSymbolIcon, ChevronDownIcon,  EnvelopeIcon,  HomeIcon,  PhoneIcon } from '@heroicons/react/24/outline';
 import { Switch } from '@headlessui/react';
+
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
@@ -27,17 +29,114 @@ export default function Contactus() {
       </div>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-       <ul className=' text-2xl'>
-        <li>Digital Address: VS-1640-8271</li>
-        <li>House/Building/Flat No.: UNNUMBERED PLOT, NEAR MTN MAST, TAFI AGOME-MADO</li>
-        <li>City: TAFI AGOME-MADO</li>
-        <li>P.O Box NO/PMB/DTD: PO BOX MP 3854, MAMPROBI G/AR</li>
-        <li>Country: Ghana</li>
-       </ul>
-        
-       
-        </p>
+        <p className="mt-2 text-lg leading-8 text-gray-600"> </p>
+        <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
+            
+              <a
+                href="#"
+                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+              >
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-100 sm:h-8 sm:w-8 ">
+                  <HomeIcon
+                    className="h-6 w-6 text-orange-500 rounded-lg bg-orange-100"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-900">
+                    GPS Address:
+                  </p>
+                  <p className="text-sm text-gray-500">
+                  VS-1640-8271
+                  House/Building/Flat No.: UNNUMBERED PLOT, NEAR MTN MAST, TAFI AGOME-MADO
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+              >
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-100 sm:h-8 sm:w-8 ">
+                  <EnvelopeIcon
+                    className="h-6 w-6 text-orange-500 rounded-lg bg-orange-100"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-900">
+                    Postal Address:
+                  </p>
+                  <p className="text-sm text-gray-500">
+                  P.O Box NO/PMB/DTD: PO BOX MP 3854, MAMPROBI G/AR
+                  Ghana
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 ">
+                  <PhoneIcon
+                    className="h-8 w-8 text-orange-500 rounded-lg bg-orange-200"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-900">
+                    Phone:
+                  </p>
+                  <p className="text-sm text-gray-500">
+                   0242-454-571, 0204-478-478 
+                   
+                  Ghana
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 ">
+                  <AtSymbolIcon
+                    className="h-8 w-8 text-orange-500 rounded-lg bg-orange-200"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-900">
+                    Phone:
+                  </p>
+                  <p className="text-sm text-gray-500">
+                   harrisonjnr@gmail, info@Celeritasfarm.com 
+                   
+                  Ghana
+                  </p>
+                </div>
+              </a>
+              
+            
+          </div>
+          <div className="bg-gray-50 p-4">
+            <a
+              href="##"
+              className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+            >
+              <span className="flex items-center">
+                <span className="text-sm font-medium text-gray-900">
+                  Documentation
+                </span>
+              </span>
+              <span className="block text-sm text-gray-500">
+                Start integrating products and tools
+              </span>
+            </a>
+          </div>
+        </div>
+
+
+
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
