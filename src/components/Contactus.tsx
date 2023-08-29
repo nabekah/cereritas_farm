@@ -2,7 +2,7 @@
 
 
 import { useState } from 'react';
-import { AtSymbolIcon, ChevronDownIcon,  EnvelopeIcon,  HomeIcon,  PhoneIcon } from '@heroicons/react/24/outline';
+import { AtSymbolIcon, ChevronDownIcon, EnvelopeIcon, HomeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import { Switch } from '@headlessui/react';
 
 
@@ -28,110 +28,104 @@ export default function Contactus() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact us</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600"> </p>
         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
-            
-              <a
-                href="#"
-                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-              >
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-100 sm:h-8 sm:w-8 ">
-                  <HomeIcon
-                    className="h-6 w-6 text-orange-500 rounded-lg bg-orange-100"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-900">
-                    GPS Address:
-                  </p>
-                  <p className="text-sm text-gray-500">
-                  VS-1640-8271
-                  House/Building/Flat No.: UNNUMBERED PLOT, NEAR MTN MAST, TAFI AGOME-MADO
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-              >
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-100 sm:h-8 sm:w-8 ">
-                  <EnvelopeIcon
-                    className="h-6 w-6 text-orange-500 rounded-lg bg-orange-100"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-900">
-                    Postal Address:
-                  </p>
-                  <p className="text-sm text-gray-500">
-                  P.O Box NO/PMB/DTD: PO BOX MP 3854, MAMPROBI G/AR
-                  Ghana
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 ">
-                  <PhoneIcon
-                    className="h-8 w-8 text-orange-500 rounded-lg bg-orange-200"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-900">
-                    Phone:
-                  </p>
-                  <p className="text-sm text-gray-500">
-                   0242-454-571, 0204-478-478 
-                   
-                  Ghana
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 ">
-                  <AtSymbolIcon
-                    className="h-8 w-8 text-orange-500 rounded-lg bg-orange-200"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-900">
-                    Phone:
-                  </p>
-                  <p className="text-sm text-gray-500">
-                   harrisonjnr@gmail, info@Celeritasfarm.com 
-                   
-                  Ghana
-                  </p>
-                </div>
-              </a>
-              
-            
+
+            <a
+              href="#"
+              className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-orange-100 sm:h-10 sm:w-10 ">
+                <HomeIcon
+                  className="h-6 w-6 text-orange-500 rounded-lg bg-orange-100"
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium text-gray-900 text-left">
+                  GPS Address
+                </p>
+                <ul className='list-outside list-disc ml-2 pl-2 text-left text-gray-500'>
+                  <li>VS-1640-8271</li>
+                  <li>NEAR MTN MAST, TAFI AGOME-MADO</li>
+                </ul>
+
+              </div>
+            </a>
+            <a
+              href="#"
+              className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-orange-100 sm:h-10 sm:w-10 ">
+                <EnvelopeIcon
+                  className="h-8 w-8 text-orange-500 rounded-lg bg-orange-100"
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium text-gray-900 text-left">
+                Postal Address
+                </p>
+                <ul className='list-outside list-disc ml-2 pl-2 text-left text-gray-500'>
+                  <li>PO BOX MP 3854 </li>
+                  <li>MAMPROBI-Ghana</li>
+                </ul>
+                
+              </div>
+            </a>
+            <a
+              href="#"
+              className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center  bg-orange-100 sm:h-10 sm:w-10 ">
+                <PhoneIcon
+                  className="h-8 w-8 text-orange-500 rounded-lg bg-orange-100"
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium text-gray-900 text-left">
+                  Phone
+                </p>
+                <ul className='list-outside list-disc ml-2 pl-2 text-left text-gray-500'>
+                  <li>0242-454-571</li>
+                  <li>0204-478-478</li>
+                </ul>
+
+
+
+              </div>
+            </a>
+            <a
+              href="#"
+              className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center  bg-orange-100 sm:h-10 sm:w-10 ">
+                <AtSymbolIcon
+                  className="h-8 w-8 text-orange-500 rounded-lg bg-orange-100"
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium text-gray-900 text-left">
+                  Email
+                </p>
+
+                <ul className='list-outside list-disc ml-2 pl-2 text-left text-gray-500'>
+                  <li>harrisonjnr@gmail</li>
+                  <li>info@Celeritasfarm.com</li>
+                </ul>
+
+
+              </div>
+            </a>
+
+
           </div>
           <div className="bg-gray-50 p-4">
-            <a
-              href="##"
-              className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-            >
-              <span className="flex items-center">
-                <span className="text-sm font-medium text-gray-900">
-                  Documentation
-                </span>
-              </span>
-              <span className="block text-sm text-gray-500">
-                Start integrating products and tools
-              </span>
-            </a>
+           
           </div>
         </div>
 
@@ -150,7 +144,7 @@ export default function Contactus() {
                 name="first-name"
                 id="first-name"
                 autoComplete="given-name"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -164,7 +158,7 @@ export default function Contactus() {
                 name="last-name"
                 id="last-name"
                 autoComplete="family-name"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -178,7 +172,7 @@ export default function Contactus() {
                 name="company"
                 id="company"
                 autoComplete="organization"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -192,7 +186,7 @@ export default function Contactus() {
                 name="email"
                 id="email"
                 autoComplete="email"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -208,7 +202,7 @@ export default function Contactus() {
                 <select
                   id="country"
                   name="country"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm"
                 >
                   <option>GH</option>
                   <option>US</option>
@@ -225,7 +219,7 @@ export default function Contactus() {
                 name="phone-number"
                 id="phone-number"
                 autoComplete="tel"
-                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -238,7 +232,7 @@ export default function Contactus() {
                 name="message"
                 id="message"
                 rows={4}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
                 defaultValue={''}
               />
             </div>
@@ -249,8 +243,8 @@ export default function Contactus() {
                 checked={agreed}
                 onChange={setAgreed}
                 className={classNames(
-                  agreed ? 'bg-indigo-600' : 'bg-gray-200',
-                  'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                  agreed ? 'bg-orange-500' : 'bg-gray-200',
+                  'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500'
                 )}
               >
                 <span className="sr-only">Agree to policies</span>
@@ -265,7 +259,7 @@ export default function Contactus() {
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
               By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold text-indigo-600">
+              <a href="#" className="font-semibold text-orange-500">
                 privacy&nbsp;policy
               </a>
               .
@@ -275,7 +269,7 @@ export default function Contactus() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-orange-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Lets talk
           </button>

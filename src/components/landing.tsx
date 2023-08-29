@@ -151,7 +151,7 @@ export default function Landing() {
                     <Popover.Button as="button"
                       className={`
                 ${open ? '' : 'text-opacity-90'}
-                group inline-flex items-center rounded-md bg-orange-700 px-3 py-2 mt-3 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                group inline-flex items-center rounded-md bg-orange-500 px-3 py-2 mt-3 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
                     >
                       <span>View our services</span>
                       <ChevronDownIcon

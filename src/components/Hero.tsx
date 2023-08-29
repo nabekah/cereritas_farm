@@ -1,9 +1,9 @@
-'use client'
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
-import coverimge from 'public/heroCover5.jpg'
+'use client';
+import { useState } from 'react';
+import { Dialog } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import coverimge from 'public/heroCover5.jpg';
 
 
 const navigation = [
@@ -18,36 +18,34 @@ export default function Hero() {
 
   return (
     <div className="relative isolate overflow-hidden bg-white p-0 ">
-      
-      <Image className=' absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
-       src={coverimge}
-       alt="cover image"
-       
-       
-      /> 
-      
-      <div className="relative px-6 lg:pt-1 lg:px-8 items-center ">
-      
 
-     
-        
+      <Image className=' absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
+        src={coverimge}
+        alt="cover image"
+      />
+
+      <div className="relative px-6 lg:pt-1 lg:px-8 items-center ">
+
+
+
+
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            
+
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            
-            
+
+
           </div>
           <div className=" sticky top-20 w-[100%] p-1 justify-center text-center items-center border-1 backdrop-blur-md rounded-md">
             <h1 className="m-6 text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
-            Welcome to Celeritas Farms
+              Welcome to Celeritas Farms
             </h1>
             <p className="m-6 mt-10 p-3 text-lg leading-8 text-gray-200 items-center">
-            where nature thrives, and abundance flourishes. Our sustainable agriculture nurtures communities, respects the environment, and grows a brighter future. 
+              where nature thrives, and abundance flourishes. Our sustainable agriculture nurtures communities, respects the environment, and grows a brighter future.
             </p>
             <div className="m-8 mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Join us today!
               </a>
@@ -70,7 +68,7 @@ export default function Hero() {
           />
         </div> */}
       </div>
-      
+
     </div>
   )
 }
