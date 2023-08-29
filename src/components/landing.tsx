@@ -199,11 +199,11 @@ export default function Landing() {
                             >
                               <span className="flex items-center">
                                 <span className="text-sm font-medium text-gray-900">
-                                  Documentation
+                                  Local Market Access
                                 </span>
                               </span>
                               <span className="block text-sm text-gray-500">
-                                Start integrating products and tools
+                                ensuring our farm products reach consumers who value freshness 
                               </span>
                             </a>
                           </div>

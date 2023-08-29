@@ -1,8 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
+import Temp from "./temp"
 const links = [
-    { name: 'Our Story', href: '#' },
-    { name: 'Our Philosophy', href: '#' },
+    { name: 'Our Story', href: '#' , Description:'Founded in 2022, Celeritas Farms started as a humble family-owned farm with a vision to create a difference in the agricultural landscape. Over the years, we have grown into a dynamic and forward-thinking organization, embracing modern technology and responsible farming methods'},
+    { name: 'Our Philosophy', href: '#', Description:'At the heart of our operations lies a deep-rooted respect for nature and its resources. We believe that by harnessing the power of nature and adopting sustainable practices, we can achieve a harmonious balance between productivity and ecological preservation.'  },
     { name: 'Our Commitment', href: '#' },
     { name: 'Why Choose Celeritas Farms?', href: '#' },
   ]
@@ -57,13 +58,14 @@ const links = [
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-              {links.map((link) => (
+            {/* <div className=" mx-1"> */}
+              {/* {links.map((link) => (
                 <Link key={link.name} href={link.href}>
                   {link.name} <span aria-hidden="true">&rarr;</span>
                 </Link>
-              ))}
-            </div>
+              ))} */}
+            <Temp />
+            {/* </div> */}
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
                 <div key={stat.name} className="flex flex-col-reverse">
