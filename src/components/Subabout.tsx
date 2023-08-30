@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Tab } from '@headlessui/react';
 
-function classNames(...classes) {
+function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -34,6 +34,31 @@ export default function Temp() {
       },
       
     ],
+    Why: [
+      {
+        id: 1,
+        title: 'Sustainability: We prioritize sustainable agriculture, minimizing our environmental impact and promoting biodiversity conservation.',
+        date: 'Jan 7',
+        commentCount: 29,
+        shareCount: 16,
+      },
+      {
+        id: 2,
+        title: 'Community Engagement: We actively engage with local farmers and communities, offering training and support to promote economic empowerment.',
+        date: 'Jan 7',
+        commentCount: 29,
+        shareCount: 16,
+      },
+      {
+        id: 3,
+        title: 'Technology and Innovation: Embracing cutting-edge technology, we optimize productivity and efficiency across our farm operations.',
+        date: 'Jan 7',
+        commentCount: 29,
+        shareCount: 16,
+      },
+      
+      
+    ],
     Commitment: [
       {
         id: 1,
@@ -60,7 +85,7 @@ export default function Temp() {
   })
 
   return (
-    <div className="w-full max-w-md md:max-w-xl px-2 py-16 sm:px-0">
+    <div className="w-full max-w-2xl px-2 py-16 sm:px-0">
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
           {Object.keys(categories).map((category) => (
@@ -68,7 +93,7 @@ export default function Temp() {
               key={category}
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-lg font-medium leading-5 text-orange-500',
+                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-orange-500',
                   ' ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-300 focus:outline-none focus:ring-2',
                   selected
                     ? 'bg-white shadow'
@@ -85,17 +110,17 @@ export default function Temp() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                'rounded-xl p-3',
-                'text-4xl ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-300 focus:outline-none focus:ring-2'
+                'rounded-xl p-1',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-300 focus:outline-none focus:ring-2'
               )}
             >
               <ul>
                 {posts.map((post) => (
                   <li
                     key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-700 hover:text-orange-800"
+                    className="relative rounded-md p-0 hover:bg-gray-600 hover:text-orange-800"
                   >
-                    <h3 className="leading-8 text-gray-300 hover:text-orange-800 text-base">
+                    <h3 className="leading-8 mb-2 pb-3 text-gray-300 hover:text-orange-800 text-base">
                       {post.title}
                     </h3>
 

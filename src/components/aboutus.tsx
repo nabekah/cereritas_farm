@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import Temp from "./temp"
+import Subabout from "./Subabout"
 const links = [
     { name: 'Our Story', href: '#' , Description:'Founded in 2022, Celeritas Farms started as a humble family-owned farm with a vision to create a difference in the agricultural landscape. Over the years, we have grown into a dynamic and forward-thinking organization, embracing modern technology and responsible farming methods'},
     { name: 'Our Philosophy', href: '#', Description:'At the heart of our operations lies a deep-rooted respect for nature and its resources. We believe that by harnessing the power of nature and adopting sustainable practices, we can achieve a harmonious balance between productivity and ecological preservation.'  },
@@ -57,14 +57,14 @@ const links = [
             At Celeritas Farms, we are a leading agricultural enterprise dedicated to sustainable farming practices and the production of high-quality farm products. With a strong commitment to excellence, innovation, and community empowerment, we aim to make a positive impact on food security, environmental conservation, and rural development.
             </p>
           </div>
-          <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div className="mt-4 max-w-2xl lg:mx-0 lg:max-w-none">
             {/* <div className=" mx-1"> */}
               {/* {links.map((link) => (
                 <Link key={link.name} href={link.href}>
                   {link.name} <span aria-hidden="true">&rarr;</span>
                 </Link>
               ))} */}
-            <Temp />
+            <Subabout />
             {/* </div> */}
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
