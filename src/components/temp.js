@@ -68,8 +68,8 @@ export default function Temp() {
               key={category}
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-orange-500',
-                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-300 focus:outline-none focus:ring-2',
+                  'w-full rounded-lg py-2.5 text-lg font-medium leading-5 text-orange-500',
+                  ' ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-300 focus:outline-none focus:ring-2',
                   selected
                     ? 'bg-white shadow'
                     : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
@@ -85,17 +85,17 @@ export default function Temp() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                'rounded-xl bg-white p-3',
-                'ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-300 focus:outline-none focus:ring-2'
+                'rounded-xl p-3',
+                'text-4xl ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-300 focus:outline-none focus:ring-2'
               )}
             >
               <ul>
                 {posts.map((post) => (
                   <li
                     key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-100"
+                    className="relative rounded-md p-3 hover:bg-gray-700 hover:text-orange-800"
                   >
-                    <h3 className="text-sm font-medium leading-5 text-black">
+                    <h3 className="leading-8 text-gray-300 hover:text-orange-800 text-base">
                       {post.title}
                     </h3>
 
